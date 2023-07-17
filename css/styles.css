@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.5;
   letter-spacing: 0.02em;
   background-color: var(--white-color);
@@ -69,7 +69,7 @@ textarea {
 }
 
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
@@ -136,7 +136,8 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-close:is(:hover, :focus) {
@@ -196,7 +197,8 @@ textarea {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 }
 
@@ -208,7 +210,6 @@ textarea {
   color: var(--color-dark-grey);
   display: block;
   margin-bottom: 4px;
-
 }
 
 .form .input {
@@ -237,11 +238,11 @@ textarea {
   border-color: var(--iris-color);
 }
 
-.form .input-darkblue:focus+.icon {
+.form .input-darkblue:focus + .icon {
   fill: var(--iris-color);
 }
 
-.form .input:checked+label .icon-checkbox {
+.form .input:checked + label .icon-checkbox {
   background-color: var(--ocean-color);
   border: none;
   fill: var(--cloud-color);
@@ -322,7 +323,7 @@ textarea {
 }
 
 .navigation .list .item .link.active::after {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -367,6 +368,10 @@ textarea {
 }
 
 .menu-mobile .link:is(:hover, :focus) {
+  color: var(--ocean-color);
+}
+
+.menu-block .list .item .link.active {
   color: var(--ocean-color);
 }
 
@@ -420,7 +425,8 @@ textarea {
 .header {
   padding: 18px 0;
   border-bottom: 1px solid var(--color-grey);
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -440,7 +446,8 @@ textarea {
 .hero {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/Dark-bg-mob-min.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/Dark-bg-mob-min1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -456,7 +463,6 @@ textarea {
 
 .features {
   padding: 96px 0;
-
 }
 
 .features-icon {
@@ -514,11 +520,12 @@ textarea {
   column-gap: 24px;
 }
 
-.team-list>.item {
+.team-list > .item {
   width: 264px;
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team .person {
@@ -559,7 +566,8 @@ textarea {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   color: #8e8f99;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers .link:is(:hover, :focus) {
@@ -573,7 +581,6 @@ textarea {
 
 .customers .link .icon {
   fill: currentColor;
-
 }
 
 .footer {
@@ -584,6 +591,7 @@ textarea {
 
 .footer .container {
   gap: 72px;
+  max-width: 530px;
 }
 
 .footer .content {
@@ -620,7 +628,7 @@ textarea {
 }
 
 .footer .form .input {
-  width: 100%;
+  width: 264px;
   padding-left: 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
@@ -632,7 +640,8 @@ textarea {
   width: 100%;
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-content {
@@ -643,7 +652,8 @@ textarea {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 16px 24px 16px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -711,14 +721,17 @@ textarea {
   border: 1px solid var(--color-grey);
   color: var(--iris-color);
   background-color: var(--cloud-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-buttons-list .button:is(:hover, :focus) {
   background-color: var(--ocean-color);
   color: var(--white-color);
   border: 1px solid transparent;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--ocean-color);
   color: var(--white-color);
 }
@@ -735,7 +748,8 @@ textarea {
 }
 
 .portfolio-list .item .link:is(:hover, :focus) {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list .item .link:is(:hover, :focus) .img-description {
@@ -789,12 +803,10 @@ textarea {
 
   .list-menu-mob {
     display: flex;
-
   }
 
   .list-menu {
     display: none;
-
   }
 
   .modal-content {
@@ -805,12 +817,12 @@ textarea {
     width: 408px;
     min-height: 584px;
     background: #fcfcfc;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     padding: 72px 16px 24px 16px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-
 
   .customers .list .item {
     height: 88px;
@@ -825,11 +837,13 @@ textarea {
   .modal-content {
     width: 100%;
   }
-
 }
 
 @media (min-width: 768px) {
-
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-tablet.jpg);
+  }
   .container {
     max-width: 768px;
   }
@@ -874,7 +888,6 @@ textarea {
     justify-content: center;
     gap: 72px 24px;
   }
-
 
   .features .list {
     row-gap: 72px;
@@ -925,6 +938,10 @@ textarea {
 }
 
 @media (min-width: 1158px) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/main-bg.jpg);
+  }
   .container {
     max-width: 1158px;
   }
@@ -1042,10 +1059,11 @@ textarea {
 }
 
 @media (min-device-pixel-ratio: 2),
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tablet.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/Dark-bg-mob-min.jpg);
   }
 }
