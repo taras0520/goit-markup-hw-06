@@ -447,13 +447,22 @@ textarea {
   max-width: 1440px;
   margin: 0 auto;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/Dark-bg-mob-min1.jpg);
+    url(../images/people-office-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: var(--white-color);
   text-align: center;
   padding: 112px 0;
+}
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/people-office-mob-2x.jpg);
+  }
 }
 
 .hero .title-one {
@@ -842,7 +851,16 @@ textarea {
 @media (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/dark-bg-tablet.jpg);
+      url(../images/people-office-tabl.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tabl-2x.jpg);
+    }
   }
   .container {
     max-width: 768px;
@@ -940,7 +958,16 @@ textarea {
 @media (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/main-bg.jpg);
+      url(../images/people-office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-2x.jpg);
+    }
   }
   .container {
     max-width: 1158px;
@@ -1055,15 +1082,5 @@ textarea {
 
   .portfolio-buttons-list {
     margin-bottom: 72px;
-  }
-}
-
-@media (min-device-pixel-ratio: 2),
-  (-webkit-min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/Dark-bg-mob-min.jpg);
   }
 }
